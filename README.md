@@ -15,16 +15,16 @@
   	</bean>
 ```
 
+```java
+	ApplicationContext factory = new ClassPathXmlApplicationContext("applicationContext.xml");
+```
+
 > **###1. Advantages**
 ```text
   1-Instantiate all the objects while loading applicationContext.xml into IOC container, when scope is singleton
   2-If the scope is Prototype then ApplicationContext also behave like BeanFactory, become on demand
     Only when scope is default or Singleton then it behaves eagerly otherwise lazy one or same as BeanFactory
   3-It provides access to value/data stored in property files [you can store static data in property files]
-```
-
-```java
-	ApplicationContext factory = new ClassPathXmlApplicationContext("applicationContext.xml");
 ```
 
 > **###2. Technologies**

@@ -27,5 +27,8 @@
   3-It provides access to value/data stored in property files [you can store static data in property files]
 ```
 
-> **###2. Technologies**
-* Spring 3.0.1.RELEASE
+> **###2. Commonly used implementations of ApplicationContext Interface**
+* FileSystemXmlApplicationContext(): full path
+* ClassPathXmlApplicationContext(): name only, but need to set classpath{location of your stored file in default/dedicated areas}
+* WebXmlApplicationContext(): load all beans from within a Web Application
+
